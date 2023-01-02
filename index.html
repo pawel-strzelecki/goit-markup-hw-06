@@ -472,10 +472,26 @@
               </li>
             </ul>
           </div>
-          <div class="footer__newsletter-box">
+          <div class="footer__newsletter--flex">
             <h4 class="footer-text">ZAPISZ SIĘ DO NEWSLETTERA</h4>
+            <div class="footer__newsletter-form--flex">
+              <form>
+                <div class="footer__newsletter-form--text-field-flex">
+                  <label for="e-mail-sign-up-for-newsletter">
+                    <input class="footer__newsletter-form--input" id="e-mail-newsletter" name="e-mail" placeholder="E-mail">
+                  </label>
+                </div>
+                <div class="footer__newsletter-button--flex">
+                  <button class="main-button" type="submit">
+                    <p class="footer__newsletter-button--text">Zapisz się</p>
+                    <svg class="footer__newsletter-button--icon">
+                      <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
       </section>
     </footer>
     <div class="backdrop is-hidden" data-modal>
