@@ -200,12 +200,11 @@ nav {
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  /* text-align: center; */
   background-color: var(--highlight-color);
   color: var(--text-bright-color);
   width: 200px;
   height: 50px;
-  border-style: hidden;
+  border: none;
   border-radius: 4px;
 }
 
@@ -431,71 +430,54 @@ img {
 }
 
 .footer-join-us {
-  display: inline-block;
   padding: 12px 0px 0px 70px;
 }
 
 .footer__newsletter--flex {
-  display: inline-block;
   padding: 12px 0px 0px 70px;
 }
 
 .footer__newsletter-form--flex {
-  padding-top: 20px;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
-}
-
-.footer__newsletter-form--text-field-flex {
-  display: inline-flex;
-  margin-right: 33px;
+  align-items: center;
+  gap: 12px;
+  padding-top: 20px;
 }
 
 .footer__newsletter-form--input {
   letter-spacing: 0.03em;
-  padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--secondary-background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  /* width: 100%; */
   height: 50px;
-}
-
-.footer__newsletter-button--flex {
-  display: inline-flex;
-  align-items: center;
-
-}
-
-/* .footer__newsletter--input::placeholder {
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
+  width: 340px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   padding-left: 16px;
-  color: rgba(255, 255, 255, 0.6);
-} */
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.footer__newsletter-button--text {
-  display: inline-flex;
-  align-items: center;
+.footer__newsletter-form--input:hover,
+.footer__newsletter-form--input:focus {
+  border-color: var(--highlight-color);
+}
+
+
+.newsletter-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 .footer__newsletter-button--icon {
-  display: inline-flex;
-  padding-left: 24px;
-  margin-top: 13px;
-  align-items: center;
-  /* position: absolute;
-  top: 13px;
-  right: 28px; */
-  /* justify-content: right;
-  align-items: center; */
   width: 24px;
   height: 24px;
-  /* padding-right: 10px; */
   fill: var(--text-bright-color);
 }
 
