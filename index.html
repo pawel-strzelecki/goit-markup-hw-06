@@ -514,18 +514,18 @@
               <input class="modal-form__input" id="email-address" name="email-address" />
             </div>
             <label class="modal-form__label-text" for="comment">Komentarz</label>
-            <div>
-              <input class="modal-form__input--comment" id="comment" name="user-comment" placeholder="Wprowadź tekst" />
-            </div>
-            <div>
+            
+              <textarea class="modal-form__comment" id="comment" name="user-comment" placeholder="Wprowadź tekst" ></textarea>
+            
+           
             <label class="modal-form__checkbox">
               <svg class="modal-form__check-icon">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-              <input type="checkbox"/>
-              Oświadczam iż akceptuję <a class="modal-form__links" href="#">Regulamin</a> i <a class="modal-form__links" href="#">Politykę Prywatności</a>.
+              <input type="checkbox" name="accepted-terms-privacy"/>
+              <span class="modal-form__terms-text">Oświadczam iż akceptuję <a class="modal-form__links" href="#">Regulamin</a> i <a class="modal-form__links" href="#">Politykę Prywatności</a>.</span>
             </label>
-          </div>
+         
           <button class="modal-form__button" type="submit">Wyślij</button>
         </form>
         
