@@ -472,64 +472,75 @@
               </li>
             </ul>
           </div>
-          <div class="footer__newsletter--flex">
+          <div class="footer__newsletter-flex">
             <h4 class="footer-text">ZAPISZ SIĘ DO NEWSLETTERA</h4>
-              <form class="footer__newsletter-form--flex">
-                <label>
-                  <input class="footer__newsletter-form--input" name="e-mail-sign-up-for-newsletter" placeholder="E-mail">
-                </label>
-                <button class="main-button newsletter-button" type="submit">
-                  <span>Zapisz się</span>
-                  <svg class="footer__newsletter-button--icon">
-                    <use href="./images/icons.svg#icon-icon-send"></use>
-                  </svg>
-                </button>
-              </form>
+            <form class="footer__newsletter-form-flex">
+              <label>
+                <input
+                  class="footer__newsletter-form-input"
+                  name="e-mail-sign-up-for-newsletter"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="main-button newsletter-button" type="submit">
+                <span>Zapisz się</span>
+                <svg class="footer__newsletter-button--icon">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
+        </div>
       </section>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal modal-form__wrapper">
         <p class="modal-form__header">Zostaw swoje dane w formularzu poniżej</p>
         <form>
-            <label class="modal-form__label-text" for="first-name">Imię</label>
-            <div class="modal-form__field">
-              <svg class="modal-form__field-icon">
-                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-              </svg>
-              <input class="modal-form__input" id="first-name" name="first-name" />
-            </div>
-            <label class="modal-form__label-text" for="phone-number">Telefon</label>
-            <div class="modal-form__field">
-              <svg class="modal-form__field-icon">
-                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-              </svg>
-              <input class="modal-form__input" id="phone-number" name="phone-number" />
-            </div>
-            <label class="modal-form__label-text" for="email-address">Email</label>
-            <div class="modal-form__field">
-              <svg class="modal-form__field-icon">
-                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-              </svg>
-              <input class="modal-form__input" id="email-address" name="email-address" />
-            </div>
-            <label class="modal-form__label-text" for="comment">Komentarz</label>
-            
-              <textarea class="modal-form__comment" id="comment" name="user-comment" placeholder="Wprowadź tekst" ></textarea>
-            
-           
-            <label class="modal-form__checkbox">
-              <svg class="modal-form__check-icon">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-              <input type="checkbox" name="accepted-terms-privacy"/>
-              <span class="modal-form__terms-text">Oświadczam iż akceptuję <a class="modal-form__links" href="#">Regulamin</a> i <a class="modal-form__links" href="#">Politykę Prywatności</a>.</span>
-            </label>
-         
+          <label class="modal-form__label-text" for="first-name">Imię</label>
+          <div class="modal-form__field">
+            <svg class="modal-form__field-icon">
+              <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+            <input class="modal-form__input" id="first-name" name="first-name" />
+          </div>
+          <label class="modal-form__label-text" for="phone-number">Telefon</label>
+          <div class="modal-form__field">
+            <svg class="modal-form__field-icon">
+              <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+            <input class="modal-form__input" id="phone-number" name="phone-number" />
+          </div>
+          <label class="modal-form__label-text" for="email-address">Email</label>
+          <div class="modal-form__field">
+            <svg class="modal-form__field-icon">
+              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
+            <input class="modal-form__input" id="email-address" name="email-address" />
+          </div>
+          <label class="modal-form__label-text" for="comment">Komentarz</label>
+
+          <textarea
+            class="modal-form__comment"
+            id="comment"
+            name="user-comment"
+            placeholder="Wprowadź tekst"
+          ></textarea>
+
+          <label class="modal-form__checkbox">
+            <svg class="modal-form__check-icon">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <input type="checkbox" name="accepted-terms-privacy" />
+            <span class="modal-form__terms-text"
+              >Oświadczam iż akceptuję <a class="modal-form__links" href="#">Regulamin</a> i
+              <a class="modal-form__links" href="#">Politykę Prywatności</a>.</span
+            >
+          </label>
+
           <button class="modal-form__button" type="submit">Wyślij</button>
         </form>
-        
-        
+
         <button class="close-button" type="button" data-modal-close>&times;</button>
       </div>
     </div>
