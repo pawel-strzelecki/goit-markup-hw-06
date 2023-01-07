@@ -66,8 +66,8 @@ a:active {
 }
 
 .header-padding {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -116,7 +116,7 @@ nav {
   height: 4px;
   width: 100%;
   position: absolute;
-  bottom: -28px;
+  bottom: -33px;
   border-radius: 2px;
 }
 
@@ -286,7 +286,7 @@ img {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding-top: 16px;
+  padding-top: 20px;
   gap: 10px;
 }
 
@@ -455,10 +455,11 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   padding-left: 16px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
-.footer__newsletter-form--input:hover,
-.footer__newsletter-form--input:focus {
+.footer__newsletter-form-input:hover,
+.footer__newsletter-form-input:focus {
   border-color: var(--highlight-color);
 }
 
@@ -643,6 +644,7 @@ img {
   padding-right: 40px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .modal-form__header {
@@ -660,7 +662,7 @@ img {
   color: var(--text-secondary-color);
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.166;
   letter-spacing: 0.01em;
 }
 
@@ -668,12 +670,13 @@ img {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   width: 100%;
   height: 120px;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 12px 16px;
+  padding: 12px 0 0 16px;
+  box-sizing: border-box;
 }
 
 textarea#comment::placeholder {
@@ -707,8 +710,8 @@ textarea#comment::placeholder {
 
 .modal-form__input:hover,
 .modal-form__input:focus,
-.modal-form__input--comment:hover,
-.modal-form__input--comment:focus {
+.modal-form__comment:hover,
+.modal-form__comment:focus {
   border-color: var(--highlight-color);
 }
 
@@ -732,6 +735,8 @@ textarea#comment::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .modal-form__checkbox input {
@@ -776,12 +781,15 @@ textarea#comment::placeholder {
   letter-spacing: 0.06em;
   background-color: var(--highlight-color);
   color: var(--text-bright-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
   width: 200px;
   height: 50px;
   border: none;
   border-radius: 4px;
-  margin-top: 30px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  bottom: 40px;
+
 }
