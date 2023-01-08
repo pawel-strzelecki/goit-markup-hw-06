@@ -590,7 +590,6 @@ img {
 .modal {
   position: sticky;
   width: 528px;
-  height: 581px;
   top: 221px;
   right: 536px;
   bottom: 222px;
@@ -640,8 +639,7 @@ img {
 }
 
 .modal-form__wrapper {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -653,12 +651,12 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 40px 0 2px 0;
+  padding-bottom: 12px;
 }
 
 .modal-form__label-text {
   display: block;
-  padding: 10px 0 4px 0;
+  padding-bottom: 4px;
   color: var(--text-secondary-color);
   font-weight: 400;
   font-size: 12px;
@@ -670,7 +668,6 @@ img {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  /* margin-bottom: 20px; */
   width: 100%;
   height: 120px;
   outline: none;
@@ -695,6 +692,7 @@ textarea#comment::placeholder {
 
 .modal-form__field {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .modal-form__input {
@@ -774,6 +772,7 @@ textarea#comment::placeholder {
 }
 
 .modal-form__button {
+  display: block;
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
@@ -782,14 +781,9 @@ textarea#comment::placeholder {
   background-color: var(--highlight-color);
   color: var(--text-bright-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  text-align: center;
   width: 200px;
   height: 50px;
   border: none;
   border-radius: 4px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 40px;
-
+  margin: 0 auto;
 }
